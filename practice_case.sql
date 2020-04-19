@@ -1,5 +1,5 @@
 /*1*/
-SELECT title, description FROM film  
+SELECT count(film_id) FROM film  
 WHERE fulltext @@ to_tsquery('astronaut')
 
 /*2*/
